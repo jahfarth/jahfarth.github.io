@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jahfar T H — Cybersecurity Specialist &amp; Python Developer</title>
+<meta name="description" content="Portfolio of Jahfar T H — final-year BTech Cybersecurity student, NPTEL Ethical Hacking certified. Builder of SentinelX (open-source mini SOC) and Scam Shield Malayalam. Website security, Python automation and data services.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b0f14'/><text x='50' y='68' font-size='52' font-family='monospace' font-weight='bold' fill='%232ee6a8' text-anchor='middle'>J</text></svg>">
+</head>
+<body>
+
+<header class="nav">
+  <a class="logo" href="#top">jahfar<span>.th</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  <nav id="navLinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#services">Services</a>
+    <a href="#contact" class="nav-cta">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="terminal-line"><span class="prompt">$</span> whoami</p>
+      <h1>Jahfar T H</h1>
+      <p class="hero-role">Cybersecurity Specialist &amp; <span class="accent">Python Developer</span></p>
+      <p class="hero-sub">Final-year BTech Cyber Security &amp; Cyber Forensics student at SUIET Mukka (CGPA 7.92). I build security tools — an open-source mini SOC, a Malayalam scam-call shield, a phishing triage engine — and help businesses secure their websites.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#projects">View Projects</a>
+        <a class="btn btn-ghost" href="https://www.fiverr.com/jahfar_builds" target="_blank" rel="noopener">Hire Me on Fiverr</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>172/172</strong><span>SentinelX tests passing</span></div>
+        <div><strong>55/100</strong><span>NPTEL Ethical Hacking (IIT KGP)</span></div>
+        <div><strong>4</strong><span>Freelance services live</span></div>
+        <div><strong>2</strong><span>Internships completed</span></div>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="profile.jpg" alt="Portrait of Jahfar T H">
+      <div class="photo-badge">🟢 Open to internships &amp; freelance work</div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section reveal">
+    <h2><span class="sec-tag">01</span> About</h2>
+    <p>Final-year BTech Computer Science &amp; Engineering (Cybersecurity) student at SUIET Mukka, Mangaluru, from Kasaragod, Kerala — seeking cybersecurity / SOC / DevSecOps internships and entry-level roles.</p>
+    <p>I build things to learn how attacks actually work: <strong>SentinelX</strong>, an open-source mini SOC platform (log ingestion, Sigma-rule detection, ML anomaly detection, MITRE ATT&amp;CK mapping, Docker); <strong>Scam Shield Malayalam</strong> — a voice-first scam-call checker built on Gnani AI speech models and submitted to the Great Indian AI Internship Challenge; and <strong>PhishScope</strong>, a phishing-email triage tool with explainable ML scoring.</p>
+    <p>Experience so far: Cyber Security Intern at Tech Vedhu, and AI/ML Intern at Edunet Foundation (AICTE + IBM SkillsBuild). Alongside college, I freelance — website security scans, WordPress malware removal, Python automation, and data cleaning with Power BI dashboards. I reply fast and work in text.</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section reveal">
+    <h2><span class="sec-tag">02</span> Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h3>Security &amp; SOC</h3>
+        <div class="chips">
+          <span>Kali Linux</span><span>Nmap</span><span>Wireshark</span><span>Snort</span><span>Burp Suite</span><span>VAPT</span><span>Sigma Rules</span><span>MITRE ATT&amp;CK</span><span>Wazuh / Sysmon</span><span>John the Ripper</span><span>Recon-ng</span><span>Malware Removal</span><span>WordPress Security</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Development &amp; Data</h3>
+        <div class="chips">
+          <span>Python</span><span>SQL</span><span>Pandas</span><span>Power BI</span><span>Machine Learning</span><span>Web Scraping</span><span>Data Cleaning</span><span>MS Excel</span><span>REST APIs</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Tools &amp; Platforms</h3>
+        <div class="chips">
+          <span>Docker</span><span>Git &amp; GitHub</span><span>Linux</span><span>HackTheBox</span><span>TryHackMe</span><span>LetsDefend</span><span>HTML / CSS / JS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section reveal">
+    <h2><span class="sec-tag">03</span> Projects</h2>
+    <div class="cards">
+
+      <article class="card">
+        <div class="card-head"><h3>SentinelX</h3><span class="tag">Flagship</span></div>
+        <p>Open-source mini SOC platform: log ingestion, Sigma-rule detection engine, ML anomaly detection, MITRE ATT&amp;CK mapping, threat-intel enrichment, live dashboard and automated response. Docker Compose deployment, 172/172 tests passing.</p>
+        <p class="stack">Python · Sigma · Docker · ML</p>
+        <a href="https://github.com/jahfarth/sentinelx" target="_blank" rel="noopener">GitHub →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Scam Shield Malayalam</h3><span class="tag">AI · Voice</span></div>
+        <p>Voice-first scam-call checker for Malayalam speakers: Gnani Prisma v2.5 speech-to-text transcribes a suspicious call, a rule engine flags OTP/KYC threats, prize lures, urgency and secrecy, and Timbre v2.5 speaks the verdict back in Malayalam. Live-tested — fake KYC call: SCAM 55, prize lure: SCAM 70, genuine bank notice: SAFE 0. Built solo for the Great Indian AI Internship Challenge (Nov 2026).</p>
+        <p class="stack">Python · Gnani AI · STT / TTS</p>
+        <a href="https://github.com/jahfarth/scam-shield-malayalam" target="_blank" rel="noopener">GitHub →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>PhishScope</h3><span class="tag">Security · ML</span></div>
+        <p>Static phishing-email triage for .eml files: SPF/DKIM/DMARC authentication checks, IOC extraction, 19 weighted red-flag rules plus explainable ML (linear-SHAP) scoring, so every verdict shows its reasons.</p>
+        <p class="stack">Python · SHAP · Email Security</p>
+        <a href="https://github.com/jahfarth/phishscope" target="_blank" rel="noopener">GitHub →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>ForensiQ-AI</h3><span class="tag">In Progress</span></div>
+        <p>Major project (team): a forensics framework for detecting and tracing data poisoning in Retrieval-Augmented Generation (RAG) systems — auditing document stores for tampered sources and their downstream effects.</p>
+        <p class="stack">Python · RAG · LLM Security</p>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>VulnX</h3><span class="tag">Case Study</span></div>
+        <p>Automated vulnerability assessment and risk prioritisation: an HTTP security-header assessment dashboard with NetworkX-based risk ranking that separates real findings from simulated training examples.</p>
+        <p class="stack">Python · NetworkX · Dashboards</p>
+        <a href="https://github.com/jahfarth/VulnX" target="_blank" rel="noopener">GitHub →</a>
+      </article>
+
+      <article class="card">
+        <div class="card-head"><h3>Employee Income Classification</h3><span class="tag">ML</span></div>
+        <p>Machine-learning project from my Edunet Foundation internship: classification models predicting employee income bands from workforce data, with data cleaning, feature engineering and model evaluation.</p>
+        <p class="stack">Python · Pandas · scikit-learn</p>
+        <a href="https://github.com/jahfarth/employee-income-classification" target="_blank" rel="noopener">GitHub →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section reveal">
+    <h2><span class="sec-tag">04</span> Experience</h2>
+    <div class="timeline">
+      <div class="t-item">
+        <p class="t-date">Oct 2026 — Present</p>
+        <h3>Freelance Website Security Specialist — Self-employed</h3>
+        <p>Website security scans, WordPress malware removal, Python automation scripts, and data cleaning + Power BI dashboards for clients via Fiverr (jahfar_builds). Also builds websites for local businesses.</p>
+      </div>
+      <div class="t-item">
+        <p class="t-date">May — Jun 2026</p>
+        <h3>Cyber Security Intern — Tech Vedhu</h3>
+        <p>Hands-on security work: vulnerability assessment practice, security tooling and reporting.</p>
+      </div>
+      <div class="t-item">
+        <p class="t-date">Jun — Jul 2025</p>
+        <h3>AI/ML Intern — Edunet Foundation (AICTE + IBM SkillsBuild)</h3>
+        <p>Built the Employee Income Classification ML project — data cleaning, feature engineering, model training and evaluation.</p>
+      </div>
+      <div class="t-item cert">
+        <p class="t-date">Nov 2026</p>
+        <h3>Certification — NPTEL Ethical Hacking, IIT Kharagpur</h3>
+        <p>Successfully completed with a final score of 55/100 on a paper known for off-syllabus depth; e-certificate issued via SWAYAM.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="section reveal">
+    <h2><span class="sec-tag">05</span> Services</h2>
+    <p class="sec-sub">Fixed-price services on Fiverr — clear scope, fast replies, delivery in days.</p>
+    <div class="cards">
+      <article class="card service">
+        <h3>Website Security Scan</h3>
+        <p>Full vulnerability scan of your website with a plain-language report: what's exposed, how serious it is, and how to fix it.</p>
+        <p class="price">From $30</p>
+        <a href="https://www.fiverr.com/jahfar_builds" target="_blank" rel="noopener">Order on Fiverr →</a>
+      </article>
+      <article class="card service">
+        <h3>WordPress Malware Removal</h3>
+        <p>Hacked WordPress site cleaned, secured and hardened — malware removed, backdoors closed, security setup done properly.</p>
+        <p class="price">From $40</p>
+        <a href="https://www.fiverr.com/jahfar_builds/remove-wordpress-malware-fix-your-hacked-website-and-secure-it" target="_blank" rel="noopener">Order on Fiverr →</a>
+      </article>
+      <article class="card service">
+        <h3>Python Automation</h3>
+        <p>Custom Python scripts that kill repetitive work — web scraping, file processing, data entry automation, report generation.</p>
+        <p class="price">From $25</p>
+        <a href="https://www.fiverr.com/jahfar_builds/automate-your-repetitive-task-with-a-custom-python-script" target="_blank" rel="noopener">Order on Fiverr →</a>
+      </article>
+      <article class="card service">
+        <h3>Data Cleaning + Power BI</h3>
+        <p>Messy Excel/CSV data cleaned and turned into a clean Power BI dashboard you can actually make decisions from.</p>
+        <p class="price">From $20</p>
+        <a href="https://www.fiverr.com/jahfar_builds/clean-your-messy-excel-or-csv-data-and-build-a-power-bi-dashboard" target="_blank" rel="noopener">Order on Fiverr →</a>
+      </article>
+    </div>
+    <p class="sec-sub">Need a website for your business instead? I build fast, clean sites for local shops and cafés — <a href="#contact">message me</a>.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section reveal">
+    <h2><span class="sec-tag">06</span> Contact</h2>
+    <p class="sec-sub">Kasaragod, Kerala · Working remotely · Fastest reply on WhatsApp or email.</p>
+    <div class="contact-grid">
+      <a class="contact-card" href="https://wa.me/919995196325" target="_blank" rel="noopener"><strong>WhatsApp</strong><span>+91 99951 96325</span></a>
+      <a class="contact-card" href="mailto:jahfarth@gmail.com"><strong>Email</strong><span>jahfarth@gmail.com</span></a>
+      <a class="contact-card" href="https://www.linkedin.com/in/jahfar-t-h-8491151ba" target="_blank" rel="noopener"><strong>LinkedIn</strong><span>jahfar-t-h</span></a>
+      <a class="contact-card" href="https://github.com/jahfarth" target="_blank" rel="noopener"><strong>GitHub</strong><span>@jahfarth</span></a>
+      <a class="contact-card" href="https://www.fiverr.com/jahfar_builds" target="_blank" rel="noopener"><strong>Fiverr</strong><span>jahfar_builds</span></a>
+      <a class="contact-card" href="https://www.upwork.com/freelancers/~01bc1d4b9a623ca7eb" target="_blank" rel="noopener"><strong>Upwork</strong><span>Jahfar T H</span></a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2026 Jahfar T H · Kasaragod, Kerala, India</p>
+  <p class="foot-note">BTech Cyber Security &amp; Cyber Forensics, SUIET Mukka (2023–2027)</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
