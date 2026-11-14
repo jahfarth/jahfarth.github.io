@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Raksha — Scam Shield for India | Stop Digital Arrest & Phone Fraud</title>
+<meta name="description" content="Raksha checks suspicious calls and messages for India's biggest scam patterns — digital arrest, fake KYC, OTP theft, parcel fraud — in English, Hindi and Malayalam. Free, private, runs on your device.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">🛡️ <span>RAKSHA</span></div>
+  <div class="langs" role="group" aria-label="Language">
+    <button data-lang="en" class="lang-btn active">English</button>
+    <button data-lang="hi" class="lang-btn">हिंदी</button>
+    <button data-lang="ml" class="lang-btn">മലയാളം</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <h1 data-i18n="tagline">Check any suspicious call or message — before you lose money.</h1>
+    <div class="stats" id="stats"></div>
+  </section>
+
+  <section class="card checker">
+    <label for="inputText" class="input-label" data-i18n="inputLabel"></label>
+    <textarea id="inputText" rows="5"></textarea>
+    <div class="actions-row">
+      <button id="micBtn" class="btn btn-ghost" data-i18n="micBtn"></button>
+      <button id="checkBtn" class="btn btn-primary" data-i18n="checkBtn"></button>
+    </div>
+    <p id="inputMsg" class="input-msg" hidden></p>
+    <div class="examples">
+      <span data-i18n="tryLabel"></span>
+      <button class="chip" data-example="0"></button>
+      <button class="chip" data-example="1"></button>
+      <button class="chip" data-example="2"></button>
+    </div>
+  </section>
+
+  <section id="result" class="card result" hidden>
+    <div id="verdictBanner" class="verdict">
+      <div id="verdictWord" class="verdict-word"></div>
+      <div id="verdictSub" class="verdict-sub"></div>
+      <div class="meter"><div id="meterFill" class="meter-fill"></div></div>
+    </div>
+
+    <div id="daAlert" class="da-alert" hidden>
+      <div class="da-title" data-i18n="digitalArrestTitle"></div>
+      <p data-i18n="digitalArrestBody"></p>
+    </div>
+
+    <h3 data-i18n="reasonsTitle"></h3>
+    <ul id="reasonsList" class="reasons"></ul>
+
+    <div class="action-card">
+      <h3 data-i18n="actionTitle"></h3>
+      <ol id="actionsList"></ol>
+      <div class="actions-row">
+        <a class="btn btn-call" href="tel:1930" data-i18n="callBtn"></a>
+        <a class="btn btn-ghost" href="https://cybercrime.gov.in" target="_blank" rel="noopener" data-i18n="reportBtn"></a>
+      </div>
+    </div>
+
+    <div class="actions-row">
+      <button id="speakBtn" class="btn btn-ghost" data-i18n="speakBtn"></button>
+      <button id="shareBtn" class="btn btn-whatsapp" data-i18n="shareBtn"></button>
+    </div>
+  </section>
+
+  <section class="card selftest">
+    <h2 data-i18n="selfTestTitle"></h2>
+    <p data-i18n="selfTestBody"></p>
+    <button id="selfTestBtn" class="btn btn-primary" data-i18n="selfTestBtn"></button>
+    <div id="selfTestOut" class="selftest-out"></div>
+  </section>
+</main>
+
+<footer>
+  <p data-i18n="footer"></p>
+  <p class="credit">Built for <strong>Code for a Billion — Bharat Agentic-AI Hackathon 2026</strong> (Track 9: Livelihood) · Open source (MIT) · By Jahfar T H</p>
+</footer>
+
+<script src="engine.js"></script>
+<script src="corpus.js"></script>
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
