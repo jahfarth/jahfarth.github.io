@@ -136,6 +136,8 @@
         /(transfer|send|pay|deposit)\s*(₹|rs\.?|inr|money|amount|fees?)?\s*\d/i,
         /pay\s*(a\s*)?(fee|charge|penalty|fine)\s*(to|for)\s*(verify|release|claim|unblock|clear)/i,
         /(verification|processing|clearance|registration)\s*(fee|charge|amount)/i,
+        /pay[^.]{0,40}(customs|clearance|duty)/i,
+        /(fine|fee|kaasu|panam)\s*(adakkuka|adaykkanam)/i,
         /gift\s*card/i,
         /(buy|send|share)\s*(a\s*)?(crypto|bitcoin|voucher)/i,
         /upi\s*(collect|request)\s*(of\s*)?(₹|rs)/i,
@@ -204,7 +206,19 @@
   ];
 
   function normalize(text) {
+    // Match compatibility forms (e.g. full-width OTP) and ignore invisible
+    // formatting characters used to split scam keywords. Only the matching
+    // copy changes; the caller's original message is never rewritten.
+    // This is a bounded evasion defense, not general homoglyph detection.
     return String(text || '')
+      .normalize('NFKC')
+      .replace(/[\u00AD\u061C\u200B\u200E\u200F\u202A-\u202E\u2060-\u2069\uFEFF]/g, '')
+      // ZWJ/ZWNJ have real shaping roles in Indic scripts. Preserve them
+      // between Indic characters; remove inserted joiners in Latin tokens.
+      .replace(/[\u200C\u200D]/g, function (mark, index, whole) {
+        var indic = /[\u0900-\u0DFF]/;
+        return indic.test(whole.charAt(index - 1)) && indic.test(whole.charAt(index + 1)) ? mark : '';
+      })
       .replace(/\s+/g, ' ')
       .trim();
   }
@@ -266,7 +280,7 @@
     return result;
   }
 
-  var api = { analyze: analyze, CATEGORIES: CATEGORIES };
+  var api = { analyze: analyze, normalizeForMatching: normalize, CATEGORIES: CATEGORIES };
   if (typeof module !== 'undefined' && module.exports) module.exports = api;
   global.RakshaEngine = api;
 })(typeof window !== 'undefined' ? window : globalThis);

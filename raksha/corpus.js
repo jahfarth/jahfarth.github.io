@@ -45,7 +45,13 @@
     { expect: 'SAFE', label: 'College notice',
       text: 'Dear students, tomorrow is the last date to submit your project synopsis to the department office.' },
     { expect: 'SAFE', label: 'Genuine KYC reminder with safety line',
-      text: 'Please update your KYC at your nearest branch before 30 Nov. We never ask for your PIN or password. Do not share your details with anyone.' }
+      text: 'Please update your KYC at your nearest branch before 30 Nov. We never ask for your PIN or password. Do not share your details with anyone.' },
+    { expect: 'SCAM', label: 'India Post parcel held + customs duty link',
+      text: 'India Post: Your parcel is held at the sorting centre. Pay customs duty of Rs 1850 within 12 hours to release it. Pay here: indiapost-pay.xyz/release' },
+    { expect: 'SCAM', label: 'Manglish — customs officer + fine',
+      text: 'Sir, njan customs officer aanu. Ningalude parcelil banned items kandethi. Case avoid cheyyan ippol thanne fine adakkuka. Aaroodum parayaruth.' },
+    { expect: 'SAFE', label: 'Genuine courier out-for-delivery',
+      text: 'Your shipment AWB 7812345678 is out for delivery today. Our delivery agent may call you. Track your parcel in the app. No payment is needed for delivery.' }
   ];
   if (typeof module !== 'undefined' && module.exports) module.exports = CORPUS;
   global.RAKSHA_CORPUS = CORPUS;
